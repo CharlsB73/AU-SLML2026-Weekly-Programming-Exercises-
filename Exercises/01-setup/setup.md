@@ -195,6 +195,20 @@ python -m ipykernel install --user --name slml-venv --display-name "Python 3 (sl
 
 ---
 
+### Pytorch is not found when running Cell 7 and 8 with an Anaconda/Miniconda installation
+Pytorch might not be found even though torch is installed and the right kernel is selected. 
+
+On Windows machines in the Anaconda prompt:
+
+```bash
+conda activate slml
+python -m pip uninstall -y torch torchvision torchaudio
+conda install -c pytorch -c conda-forge pytorch torchvision cpuonly
+python -m ipykernel install --user --name slml --display-name "Python 3 (slml)"
+```
+
+Close the opened Jupyter Lab tab and run Steps 5 and 6 again.
+
 ### Conda solver takes too long or fails
 
 **Symptom:** `conda env create` runs for more than 20 minutes or exits with a `PackagesNotFoundError`.  
