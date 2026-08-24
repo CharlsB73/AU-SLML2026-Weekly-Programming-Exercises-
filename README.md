@@ -3,7 +3,7 @@
 This repository contains the weekly programming exercises for students taking the course on Statistical Learning & Machine Learning at Aarhus University in Fall 2026.
 
 ## Important code shortcuts:
-´´´bash
+```bash
 # 1. Navigate to the repo (do this first, every session)
 cd /path/to/AU-SLML2026-Weekly-Programming-Exercises-
 
@@ -19,4 +19,4 @@ jupyter lab
 
 # 5. When you're done working
 deactivate
-´´´
+```
